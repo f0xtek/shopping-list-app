@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Lemon Yellow Sun";
+    src: url("./dk_lemon_yellow_sun/DK\ Lemon\ Yellow\ Sun.otf");
+}
+
+:root {
+    --colorShadeA: rgb(106, 163, 137);
+    --colorShadeB: rgb(121, 186, 156);
+    --colorShadeC: rgb(150, 232, 195);
+    --colorShadeD: rgb(187, 232, 211);
+    --colorShadeE: rgb(205, 255, 232);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Lemon Yellow Sun";
+    background: #ecc;
+}
+
+header,
+div {
+    margin-left: 10px;
+}
+
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-family: "Lemon Yellow Sun";
+    font-size: 5rem;
+    line-height: 1em;
+    margin-bottom: 0;
+    transform: translateY(-50%);
+    text-shadow: 0 1px 0 #e4adad, 0 2px 0 #e1a6a6, 0 3px 0 #df9e9e, 0 4px 0 #dc9696, 0 5px 0 #da8f8f, 0 6px 0 #d78787, 0 7px 0 #d58080, 0 8px 0 #d27878, 0 0 5px rgba(237, 154, 154, .05), 0 -1px 3px rgba(237,154,154,.2), 0 9px 9px rgba(237,154,154, .5),0 12px 12px rgba(237, 154, 154, .5), 0 15px 15px rgba(237,154,154, .5);
+}
+
+input {
+    font-family: "Lemon Yellow Sun";
+    font-size: 2rem;
+    width: 30%;
+    border: none;
+    background-color: rgba(255,255,255,0);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: solid;
+    border-bottom: solid 2px black;
+}
+
+input:focus {
+    background-color: rgba(255,255,255,0);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom: solid 2px black;
+    outline: none;
+}
+
+li {
+    font-size: 2rem;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+#input {
+    display: flex;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.listitem {
+    list-style: disc;
+    padding: 3px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color:var(--colorShadeA);
+    font-weight: 700;
+    font-family: inherit;
+}
+
+button.listbutton {
+    margin-left: 30px;
+    padding: 0.5em 1em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+button.listbutton:hover {
+    background: var(--colorShadeD);
+    transform: translate(0, 0.125em);
+}
+
+button.listbutton:active {
+    transform: translate(0em, 0.25em);
+}
